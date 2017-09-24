@@ -3,9 +3,78 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{0707E209-D834-4A99-A432-2DBCAA1C9AE6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{32C8D238-6BE6-4C5D-9701-364243123926}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{7C41A414-F0DF-4ED5-AD43-2EBA3702E192}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{EBDFDE6B-A2C0-423B-A60F-948DC3FAE14C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{8B472B6A-838E-4B4D-ACC1-F783584C7EBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{A9C1333B-94C0-4299-BA25-9C30159B043A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{BA4B2F41-3CCE-4CE9-B53B-03260EAE5332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.WebApi", "HBSIS.SpaUserControl.WebApi\HBSIS.SpaUserControl.WebApi.csproj", "{41D439D3-9571-4B5C-8071-5380B7398B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.CrossCutting.Identity", "HBSIS.SpaUserControl.CrossCutting.Identity\HBSIS.SpaUserControl.CrossCutting.Identity.csproj", "{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.CrossCutting.IoC", "HBSIS.SpaUserControl.CrossCutting.IoC\HBSIS.SpaUserControl.CrossCutting.IoC.csproj", "{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Application", "HBSIS.SpaUserControl.Application\HBSIS.SpaUserControl.Application.csproj", "{EF364E70-AECC-4F0C-82CD-7EF062C0EED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Domain", "HBSIS.SpaUserControl.Domain\HBSIS.SpaUserControl.Domain.csproj", "{D0EE47E3-0B3E-4949-96A4-A88E139B29A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Data", "HBSIS.SpaUserControl.Data\HBSIS.SpaUserControl.Data.csproj", "{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41D439D3-9571-4B5C-8071-5380B7398B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D439D3-9571-4B5C-8071-5380B7398B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D439D3-9571-4B5C-8071-5380B7398B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D439D3-9571-4B5C-8071-5380B7398B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9C1333B-94C0-4299-BA25-9C30159B043A} = {8B472B6A-838E-4B4D-ACC1-F783584C7EBC}
+		{BA4B2F41-3CCE-4CE9-B53B-03260EAE5332} = {8B472B6A-838E-4B4D-ACC1-F783584C7EBC}
+		{41D439D3-9571-4B5C-8071-5380B7398B1F} = {32C8D238-6BE6-4C5D-9701-364243123926}
+		{CDC928E0-5CAC-4FAA-AAB6-7B7C4FC4B457} = {BA4B2F41-3CCE-4CE9-B53B-03260EAE5332}
+		{CE37A777-E3E9-4AA5-83AF-77CBF1DE9C60} = {BA4B2F41-3CCE-4CE9-B53B-03260EAE5332}
+		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8} = {7C41A414-F0DF-4ED5-AD43-2EBA3702E192}
+		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4} = {EBDFDE6B-A2C0-423B-A60F-948DC3FAE14C}
+		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0} = {A9C1333B-94C0-4299-BA25-9C30159B043A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {770D9248-9ACA-4F91-9BC7-1431AE950037}
