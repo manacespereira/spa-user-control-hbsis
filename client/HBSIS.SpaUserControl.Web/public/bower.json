@@ -1,0 +1,27 @@
+{
+  "name": "scuptel",
+  "authors": [
+    "Manacés Pereira <manaces@riseupsolutions.com.br>"
+  ],
+  "description": "",
+  "main": "app_start/startup.js",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7",
+    "angular-touch": "^1.6.4",
+    "jquery": "2.2.4",
+    "angular-local-storage": "^0.7.1",
+    "angular-input-masks": "^2.6.0"
+  }
+}

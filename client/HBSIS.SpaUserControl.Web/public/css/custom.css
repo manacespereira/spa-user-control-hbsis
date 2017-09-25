@@ -1,0 +1,163 @@
+.page-header {
+    margin-top: 25px;
+}
+
+.scup-title {
+    font-size: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.scup-plus {
+    position: absolute;
+}
+
+.price-call span:last-child,
+.price-call span:nth-last-child(2),
+.price-call span:nth-last-child(3),
+.price-call span:nth-child(2),
+.price-call span:first-child {
+    font-size: 15px!important;
+}
+
+.scup-plus-big {
+    font-size: .8em;
+}
+
+.scup-plus-small {
+    font-size: .4em;
+    margin-left: 20px;
+}
+
+.icon-scup {
+    font-weight: bolder;
+    margin-left: -5px;
+}
+
+.icon-scup-big {
+    font-size: 1.2em;
+    line-height: 10px;
+}
+
+.icon-scup-small {
+    font-size: .8em;
+}
+
+.row {
+    margin-top: 15px;
+}
+
+.plans-compare-container input[type="text"] {
+    border-radius: inherit;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.plus-btn {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -5px;
+    background: #6564D0;
+    font-size: 13px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+.plus-btn,
+.plus-btn i {
+    cursor: pointer;
+}
+
+.plans-list {
+    font-size: 1em;
+}
+
+.plans-list div {
+    padding: 25px;
+    border-right: 1px solid gray;
+}
+
+.plans-list div:last-child,
+.plans-list div:nth-last-child(2) {
+    border: none;
+}
+
+.plans-list div span.big-letters-price {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.plans-list div h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#modal-DDD {
+    top: 50%;
+    margin-top: -150px;
+}
+
+#modal-DDD .modal-content {
+    background-color: white;
+}
+
+#modal-DDD .modal-dialog {
+    margin: 30px auto;
+    width: 300px;
+}
+
+#modal-DDD .modal-body {
+    padding: 7px;
+}
+
+#modal-DDD .modal-dialog .modal-content .modal-body table tbody tr {
+    cursor: pointer;
+}
+
+#modal-DDD .btn-close-modal {
+    position: absolute;
+    z-index: 1;
+    height: 20px;
+    background: antiquewhite;
+    font-size: 13px;
+    right: -15px;
+    top: -15px;
+    width: 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+@media (max-width: 1200px) {
+    .scup-title {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .scup-title {
+        font-size: 6em;
+    }
+    .scup-plus-small {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .scup-title {
+        font-size: 4em;
+    }
+    .scup-plus-small {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .scup-title {
+        font-size: 50px;
+    }
+}

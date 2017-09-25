@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h4 class="title">Clientes já cadastrados</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="/newClient" class="btn btn-primary">Novo Cliente</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <th>Identificador</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>CPF/CNPJ</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="client in clients">
+                    <td>{{client.id}}</td>
+                    <td>{{client.name}}</td>
+                    <td>{{client.email}}</td>
+                    <td>{{client.phoneNumber}}</td>
+                    <td>{{client.documentNumber}}</td>
+                    <td>
+                        <button class="btn btn-info">Editar</button>
+                        <button class="btn btn-danger">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
