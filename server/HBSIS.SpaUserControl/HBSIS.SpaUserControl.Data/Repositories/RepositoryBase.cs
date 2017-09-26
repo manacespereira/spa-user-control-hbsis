@@ -32,7 +32,7 @@ namespace HBSIS.SpaUserControl.Data.Repositories
             Ctx.SaveChanges();
         }
 
-        public TEntity GetById(string id)
+        public TEntity GetById(int id)
         {
             return Ctx.Set<TEntity>().Find(id);
         }

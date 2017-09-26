@@ -12,8 +12,8 @@ describe('homeControllerTests', function() {
         expect(controller).toBeDefined();
     });
 
-    it('sould initialize callsService', inject(function(callsService) {
-        expect(callsService).toBeDefined();
+    it('sould initialize callsService', inject(function(clientService) {
+        expect(clientService).toBeDefined();
     }));
 
 });

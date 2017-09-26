@@ -9,8 +9,8 @@ namespace HBSIS.SpaUserControl.Application.Interfaces
     {
         void Register(ClientViewModel clientViewModel);
         IEnumerable<ClientViewModel> GetAll();
-        ClientViewModel GetById(string id);
+        ClientViewModel GetById(int id);
         void Update(ClientViewModel clientViewModel);
-        void Remove(string id);
+        void Remove(int id);
     }
 }

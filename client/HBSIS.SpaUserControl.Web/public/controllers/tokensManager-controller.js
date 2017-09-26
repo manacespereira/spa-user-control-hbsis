@@ -15,7 +15,7 @@
             $scope.refreshTokens = results.data;
 
         }, function(error) {
-            alert(error.data.message);
+            console.log(error.data.message);
         });
 
         $scope.deleteRefreshTokens = function(index, tokenid) {

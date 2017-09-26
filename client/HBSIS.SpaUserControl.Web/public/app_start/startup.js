@@ -4,7 +4,8 @@
     angular.module('spaHbsisApp', [
             'ngRoute',
             'LocalStorageModule',
-            'ui.utils.masks'
+            'ui.utils.masks',
+            'angular-loading-bar'
         ])
         .config(function($httpProvider) {
             $httpProvider.interceptors.push('authInterceptorService');

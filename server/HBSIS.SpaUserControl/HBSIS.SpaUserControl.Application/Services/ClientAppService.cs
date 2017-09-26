@@ -35,7 +35,7 @@ namespace HBSIS.SpaUserControl.Application.Services
             return clients;
         }
 
-        public ClientViewModel GetById(string id)
+        public ClientViewModel GetById(int id)
         {
             var client = Mapper.Map<ClientViewModel>(_clientRepository.GetById(id));
             return client;
@@ -43,13 +43,14 @@ namespace HBSIS.SpaUserControl.Application.Services
 
         public void Update(ClientViewModel clientViewModel)
         {
-            var client = Mapper.Map<Client>(clientViewModel);
-            _clientRepository.Update(client);
+            var oldClient = _clientRepository.GetById(clientViewModel.Id);
+            var updatedClient = Mapper.Map(clientViewModel, oldClient);
+            _clientRepository.Update(updatedClient);
         }
 
-        public void Remove(string id)
+        public void Remove(int id)
         {
-            var client = Mapper.Map<Client>(GetById(id));
+            var client = _clientRepository.GetById(id);
             _clientRepository.Remove(client);
         }
     }

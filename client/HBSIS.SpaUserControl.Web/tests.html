@@ -15,21 +15,34 @@
     <script src="./public/bower_components/angular/angular.js"></script>
     <script src="./public/bower_components/angular-route/angular-route.js"></script>
     <script src="./public/bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="./public/bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
     <script src="./public/bower_components/angular-touch/angular-touch.js"></script>
+    <script src="./public/bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="./public/bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
+
 
     <script src="./public/app_start/startup.js"></script>
-    <script src="./public/app_start/route.config.js.js"></script>
+    <script src="./public/app_start/route.config.js"></script>
     <script src="./public/app_start/base.config.js"></script>
 
-    <script src="./public/controllers/homeController.js"></script>
+    <!-- controllers -->
+    <script src="./public/controllers/home-controller.js"></script>
+    <script src="./public/controllers/index-controller.js"></script>
+    <script src="./public/controllers/login-controller.js"></script>
+    <script src="./public/controllers/refresh-controller.js"></script>
+    <script src="./public/controllers/signup-controller.js"></script>
+    <script src="./public/controllers/tokensManager-controller.js"></script>
 
-    <script src="./public/services/callsService.js"></script>
+    <!-- services -->
+    <script src="./public/services/client-service.js"></script>
+    <script src="./public/services/auth-service.js"></script>
+    <script src="./public/services/authInterceptor-service.js"></script>
+    <script src="./public/services/tokensManager-service.js"></script>
 
-    <script src="./public/filters/priceCallFormatter.js"></script>
-    <script src="./public/filters/replaceWordMore.js"></script>
+    <!-- filters -->
+
+    <!-- directives -->
+    <script src="./public/directives/js/lettering.js"></script>
 
     <script src="./test/controllers/homeControllerSpec.js"></script>
-
-    <script src="./test/filters/priceCallFormatterSpec.js"></script>
-    <script src="./test/filters/replaceWordMoreSpec.js"></script>
 </body>

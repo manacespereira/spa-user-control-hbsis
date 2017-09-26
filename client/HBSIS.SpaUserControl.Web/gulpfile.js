@@ -24,7 +24,8 @@
 
     let styleFiles = [
         './public/css/*.css',
-        './public/bower_components/font-awesome/css/font-awesome.css'
+        './public/bower_components/font-awesome/css/font-awesome.css',
+        './public/bower_components/angular-loading-bar/build/loading-bar.css'
     ];
 
     let libFiles = [
@@ -32,6 +33,8 @@
         './public/bower_components/angular-route/angular-route.js',
         './public/bower_components/angular-local-storage/dist/angular-local-storage.js',
         './public/bower_components/angular-touch/angular-touch.js',
+        './public/bower_components/angular-loading-bar/build/loading-bar.js',
+        './public/bower_components/angular-input-masks/angular-input-masks-standalone.js',
         './public/bower_components/jquery/dist/jquery.js',
         './public/bower_components/bootstrap/dist/js/bootstrap.js'
     ];

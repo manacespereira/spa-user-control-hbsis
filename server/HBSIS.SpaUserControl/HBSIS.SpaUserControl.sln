@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Domain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Data", "HBSIS.SpaUserControl.Data\HBSIS.SpaUserControl.Data.csproj", "{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 - Tests", "6 - Tests", "{C81AD10B-D73B-4B24-B943-AA68C7088A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HBSIS.SpaUserControl.Tests", "HBSIS.SpaUserControl.Tests\HBSIS.SpaUserControl.Tests.csproj", "{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,10 @@ Global
 		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +83,7 @@ Global
 		{EF364E70-AECC-4F0C-82CD-7EF062C0EED8} = {7C41A414-F0DF-4ED5-AD43-2EBA3702E192}
 		{D0EE47E3-0B3E-4949-96A4-A88E139B29A4} = {EBDFDE6B-A2C0-423B-A60F-948DC3FAE14C}
 		{FCFCEEE4-A97F-40D9-88DE-2C3820050CF0} = {A9C1333B-94C0-4299-BA25-9C30159B043A}
+		{B4FD2E2D-6E85-4B60-A839-4C58ED2E60A6} = {C81AD10B-D73B-4B24-B943-AA68C7088A82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {770D9248-9ACA-4F91-9BC7-1431AE950037}

@@ -12,12 +12,12 @@
 
             $routeProvider.when("/newClient", {
                 controller: "homeController",
-                templateUrl: "./views/newClient.html"
+                templateUrl: "./views/formClient.html"
             });
 
-            $routeProvider.when("/editUser/:id", {
+            $routeProvider.when("/editClient/:id", {
                 controller: "homeController",
-                templateUrl: "./views/home.html"
+                templateUrl: "./views/formClient.html"
             });
 
             $routeProvider.when("/login", {
@@ -25,19 +25,9 @@
                 templateUrl: "./views/login.html"
             });
 
-            $routeProvider.when("/signup", {
-                controller: "signupController",
-                templateUrl: "./views/signup.html"
-            });
-
             $routeProvider.when("/tokens", {
                 controller: "tokensManagerController",
                 templateUrl: "./views/tokens.html"
-            });
-
-            $routeProvider.when("/associate", {
-                controller: "associateController",
-                templateUrl: "./views/associate.html"
             });
 
             $routeProvider.otherwise({ redirectTo: "/home" });

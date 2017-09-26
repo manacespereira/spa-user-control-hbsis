@@ -14,8 +14,16 @@ namespace HBSIS.SpaUserControl.Data.Mappings
                 .IsRequired();
 
             Property(c => c.Email)
-                .HasMaxLength(11)
-                .IsRequired();   
+                .HasMaxLength(100)
+                .IsRequired();
+
+            Property(x => x.DocumentNumber)
+                .IsRequired()
+                .HasMaxLength(14);
+
+            Property(x => x.PhoneNumber)
+                .IsRequired()
+                .HasMaxLength(11);
         }
     }
 }

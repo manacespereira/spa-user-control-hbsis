@@ -11,20 +11,32 @@
         var clientsApiUrl = baseConfig.apiUrl + 'clients/';
 
         var service = {
+            get: _get,
             getAll: _getAll,
-            save: _save
+            save: _save,
+            delete: _delete
         };
 
         return service;
 
         ////////////////
+        function _get(id) {
+            return $http.get(clientsApiUrl + id);
+        }
+
         function _getAll() {
             return $http.get(clientsApiUrl);
         }
 
         function _save(client) {
-            console.log(client);
+            if (client.id)
+                return $http.put(clientsApiUrl, client);
             return $http.post(clientsApiUrl, client);
+        }
+
+        function _delete(client) {
+            console.log(client);
+            return $http.delete(clientsApiUrl + client.id);
         }
     }
 })();

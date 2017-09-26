@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using HBSIS.SpaUserControl.Application.Extensions;
 using HBSIS.SpaUserControl.Application.Interfaces;
 using HBSIS.SpaUserControl.Application.ViewModels;
 
@@ -38,7 +39,7 @@ namespace HBSIS.SpaUserControl.WebApi.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public HttpResponseMessage Get(string id)
+        public HttpResponseMessage Get(int id)
         {
             try
             {
@@ -57,6 +58,7 @@ namespace HBSIS.SpaUserControl.WebApi.Controllers
         {
             try
             {
+                model.IsValid();
                 _clientAppService.Register(model);
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
@@ -72,6 +74,7 @@ namespace HBSIS.SpaUserControl.WebApi.Controllers
         {
             try
             {
+                model.IsValid();
                 _clientAppService.Update(model);
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
@@ -83,7 +86,7 @@ namespace HBSIS.SpaUserControl.WebApi.Controllers
         
         [HttpDelete]
         [Route("{id}")]
-        public HttpResponseMessage Delete(string id)
+        public HttpResponseMessage Delete(int id)
         {
             try
             {

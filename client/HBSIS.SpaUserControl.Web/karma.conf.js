@@ -19,6 +19,9 @@ module.exports = function(config) {
             './public/bower_components/angular-route/angular-route.js',
             './public/bower_components/angular-touch/angular-touch.js',
             './public/bower_components/angular-mocks/angular-mocks.js',
+            './public/bower_components/angular-local-storage/dist/angular-local-storage.js',
+            './public/bower_components/angular-input-masks/angular-input-masks-standalone.js',
+            './public/bower_components/angular-loading-bar/build/loading-bar.js',
 
             './public/app_start/startup.js',
             './public/app_start/route.config.js',

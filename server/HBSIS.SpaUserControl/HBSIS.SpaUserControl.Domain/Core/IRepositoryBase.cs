@@ -9,7 +9,7 @@ namespace HBSIS.SpaUserControl.Domain.Core
         void Add(TEntity obj);
         void Update(TEntity obj);
         void Remove(TEntity obj);
-        TEntity GetById(string id);
+        TEntity GetById(int id);
         IQueryable<TEntity> Get(Expression<Func<TEntity, bool>> filter, Expression<Func<TEntity, object>>[] includes);
         IQueryable<TEntity> Get();
         void Dispose();

@@ -21,15 +21,17 @@
                 <th>CPF/CNPJ</th>
             </thead>
             <tbody>
-                <tr ng-repeat="client in clients">
+                <tr ng-repeat="client in clientList">
                     <td>{{client.id}}</td>
                     <td>{{client.name}}</td>
                     <td>{{client.email}}</td>
                     <td>{{client.phoneNumber}}</td>
                     <td>{{client.documentNumber}}</td>
-                    <td>
-                        <button class="btn btn-info">Editar</button>
-                        <button class="btn btn-danger">Excluir</button>
+                    <td class="text-center">
+                        <a href="/editClient/{{client.id}}" class="btn btn-info">Editar</button>
+                    </td>
+                    <td class="text-center">
+                        <button ng-click="deleteClient(client)" class="btn btn-danger">Excluir</button>
                     </td>
                 </tr>
             </tbody>
